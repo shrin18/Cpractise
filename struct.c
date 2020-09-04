@@ -3,6 +3,20 @@
 #include <ctype.h>
 #include <string.h>
 
+void function(int *z, int *v)
+  {
+    *z = 20;
+    *v = 10;
+  }
+ 
+  union abc {
+      int a;
+      char b;
+      double c;
+      float d;
+
+  };
+
 typedef struct
 {
   int length;
@@ -35,7 +49,12 @@ int main(void) {
        mybuilding.rectangle.length,mybuilding.rectangle.width, 
        mybuilding.owner);
 
-  
+  printf("\n \t Size of Union abc %ld\n ", sizeof(union abc));
+
+  union abc var;
+  var.a = 90;
+  union abc *p = &var;
+  printf ("\n Union abc gives the values %d %c %f \n", p->a, p->b, p->c);
 
   position path[] = {{1,9},{3,4},{5,6},{4,6}};
 
@@ -47,6 +66,10 @@ int main(void) {
 
   buildingplan *structpointer = &mybuilding;
   printf("Position x: %d\n\n", structpointer->position.x);
+
+  int a = 8;
+  int b = 18;
+  function(&a,&b);
 
 return 0;
 }
