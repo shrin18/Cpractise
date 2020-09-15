@@ -1,4 +1,4 @@
-# Cpractise
+# Cpractice
 Practise for 'C' programming language.
 
 ## Some basic concepts in 'C'
