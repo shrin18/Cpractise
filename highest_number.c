@@ -2,7 +2,8 @@
 
 int main()
 {
-    int num1, num2, num3;
+    int num1, num2, num3, num4;
+
     int max,min;
 
     /* Input two numbers from user */
