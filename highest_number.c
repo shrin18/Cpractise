@@ -5,14 +5,13 @@ int addnumericals(int a, int b)
   printf("Enter any two numbers of your choice whose addition is required to be returned");
   scanf("%d, %d", &a, &b);
   return a+b;
-
 }
 
 
 int main()
 {
     int num1, num2, num3, num4;
-    int numericals;
+    addnumericals(num1,num2);
 
     int max,min;
 
