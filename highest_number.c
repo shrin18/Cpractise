@@ -7,11 +7,29 @@ int addnumericals(int a, int b)
   return a+b;
 }
 
-
 int main()
 {
     int num1, num2, num3, num4;
     addnumericals(num1,num2);
+
+    int  a,b;
+    float c,d;
+
+    switch(a)
+    {
+      case 0: printf("Why is this function used ?");
+      case 1: printf("");
+              for (int i=0;i<5;i++)
+               {
+                  if (i>2)
+                  {
+                    return 0;
+                  }else
+                  {
+                    return 1;
+                  }     
+                }
+    }
 
     int max,min;
 
