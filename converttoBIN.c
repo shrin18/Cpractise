@@ -25,7 +25,7 @@ int main()
     puts("\n Invalid input!");
 
     my_short = (short)input_int;
-    printf("Binary value");
+    printf("Binary value is ");
 
     for(idx = 0; idx < NUM_BITS; idx ++)
     {
