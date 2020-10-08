@@ -21,7 +21,7 @@ int main()
     getline(&my_string, &nbytes, stdin);
 
     args_assigned = sscanf(my_string,"%d", &input_int);
-    if ((args_assigned != 1) || (input_int < 0) || (input_int < 128))
+    if ((args_assigned != 1) || (input_int < 0) || (input_int > 128))
     puts("\n Invalid input!");
 
     my_short = (short)input_int;
