@@ -5,9 +5,9 @@
 
 
 struct counters {
-  int little: 2;
-  int medium: 4;
-  int large: 6;
+  unsigned int little: 2;
+  unsigned int medium: 4;
+  unsigned int large: 6;
 };
 
 #define NUM_LOOPS 50
@@ -25,6 +25,8 @@ int main(void) {
     counts.large++;
     printf("%d, %d, %d\n", counts.little, counts.medium, counts.large);
   }
+
+  printf("Sizeof counts = %lu\n", sizeof(counts));
 
 
   return 0;
