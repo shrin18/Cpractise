@@ -17,16 +17,19 @@ typedef struct
   node *tail;
 }queue;
 
-
 void init_queue(queue *q)
 {
+  //Queue starts out empty
   q->head = NULL;
   q->tail = NULL;
 }
 
 bool enqueue(queue *q, int value)
 {
+  //Call malloc and create a new node
   node *newnode = malloc(sizeof(node));
+
+  //if malloc fails
   if (newnode == NULL) return false;
   newnode->value = value;
   newnode->next =  NULL;
@@ -34,11 +37,15 @@ bool enqueue(queue *q, int value)
   if(q->tail != NULL){
     q->tail->next = newnode;
   }
+
+  //if there is a tail, connect old tail to new tail
   q->tail = newnode;
+  //check if head is null
   if(q->head == NULL)
   {
     q->head = newnode;
   }
+  
   return true;
 }
 

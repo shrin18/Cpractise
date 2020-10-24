@@ -22,7 +22,6 @@ else
 {
   printf("Enter employee details : ");
   scanf("%d %s %f", &ptr->eno, &ptr->ename, &ptr->esal);
-
 }
   return 0;
 }

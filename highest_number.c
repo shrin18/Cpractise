@@ -1,4 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+#include<stdio.h>
+
+void delay(int j)
+{
+  printf("This is the C program that will be executed within 10 seconds", &j);
+  delay(1000);
+  printf("The delay after this point is 500 ms");
+
+  delay(100);
+  printf("The results of the checkster were completed just now");
+    
+  delay(500);
+  return 0;
+
+}
+
+int p;
+
+p = sizeof(calloc(4, sizeof(double));
 
 int addnumericals(int a, int b)
 {
@@ -14,6 +35,9 @@ int main()
 
     int  a,b;
     float c,d;
+
+    printf("Enter your choice :");
+    scanf("%d", &b);
 
     switch(a)
     {
