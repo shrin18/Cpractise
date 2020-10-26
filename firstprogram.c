@@ -10,10 +10,18 @@ int main(void) {
   char movie[100] = "Batman returns!";
   char movie3[20];
 
+  char movie4[25];
+  char * pmovie4 = movie4;
+
   char * pmovie3 = movie3;
 
   fgets(movie3, 25, stdin);
   puts(pmovie3);
+
+  fgets(movie4, 30, stdin);
+  puts(pmovie4);
+
+
 
   char * movie2 = "batman begins!";
   puts(movie);
