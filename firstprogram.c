@@ -25,7 +25,7 @@ int main(void) {
 
   for (i=0;i<5;i++)
   {
-    printf("\nshri[%d] \t %p \t %d", i, &shri[i], shri[i]);
+    printf("\nshri[%d] \t %p \t %d\n", i, &shri[i], shri[i]);
   }
 
   //Array pointer are reference to first element
