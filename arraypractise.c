@@ -1,32 +1,41 @@
 #include <stdio.h>
-
-int main(void) {
- 
-int arr[5] = {1,3,5,7,9};
-int max = arr[0];
-int min = arr[0];
-
-for (int i=0; i<5; i++)
+int main()
 {
-  if (arr[i]>arr[0])
-  {
-    max = arr[i];
-  }
-  else {
-    max = arr[0];
-  }
-}
+  int arr[100];
+  int max = arr[0];
+  int min = arr[0];
+  int n;
 
-for (int i=0; i<5; i++)
-{
-  if (arr[i]<arr[0])
+  printf("Enter size: ");
+  scanf("%d", &n);
+
+  printf("Enter array elements: ");
+  for(int i=0; i<n-1; i++)
   {
-    min = arr[i];
+    scanf("%d", &arr[i]);
   }
-  else {
-    min = arr[0];
+
+  for (int i=0; i<n-1; i++)
+  {
+    if(arr[i]>arr[0])
+    {
+      max = arr[i];
+    }
+    else{
+      max = arr[0];
+    }
   }
-}
+
+  for (int i=0; i<n-1; i++)
+  {
+    if(arr[i]<arr[0])
+    {
+      min = arr[i];
+    }
+    else{
+      min = arr[0];
+    }
+  }
 
 printf("Highest value in array is %d \n", max);
 
