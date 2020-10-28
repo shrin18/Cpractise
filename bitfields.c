@@ -3,7 +3,6 @@
 #include <stdint.h>
 #include <time.h>
 
-
 #define TS_BUF_LENGTH 30
 #define LOG_TIME  0x01
 #define LOG_DATE  0x02
