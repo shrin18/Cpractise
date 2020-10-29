@@ -1,18 +1,10 @@
 #! /bin/bash
 
-age=30
-NAME="Brad"
-
-if [ "$age" -lt 18 -o "$age" -lt 40 ]
-then 
-        echo "AGe is correct"
-else
-        echo "Age is not correct"
-fi
-
-if ["$NAME" == "Brad"]
+NUM1=3
+NUM2=5
+if [ "$NUM1" -gt "$NUM2" ]
 then
-    echo "Your friend is called Brad"
-elif ["$NAME" == "Jack"]
-    echo "Your friend is Jack"
+    echo "$NUM1 is greater than $NUM2"
+else
+    echo "$NUM1 is less than $NUM2"
 fi
