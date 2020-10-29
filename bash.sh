@@ -8,3 +8,11 @@ then
 else
     echo "$NUM1 is less than $NUM2"
 fi
+
+FILE="test.txt"
+if [ -f "$FILE" ]
+then
+    echo "$FILE is a file"
+else 
+    echo "$FILE is not a file"
+fi  
