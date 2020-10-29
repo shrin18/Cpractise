@@ -51,8 +51,6 @@ void deQueue(struct Queue*q)
   free(temp);
 }
 
-
-
 int main(void) {
   struct Queue *q = createQueue();
   enQueue(q, 10);
