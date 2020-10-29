@@ -1,18 +1,18 @@
 #! /bin/bash
-count = 10
 
-if [ "$age" -gt 18 ] && [ "$age" -lt 40]
-then
-    echo "Age is correct"
-else 
-    echo "Age is not correct"
+age=30
+NAME="Brad"
+
+if [ "$age" -lt 18 -o "$age" -lt 40 ]
+then 
+        echo "AGe is correct"
+else
+        echo "Age is not correct"
 fi
 
-if (($count < 9)) 
+if ["$NAME" == "Brad"]
 then
-    echo "The condition is true"
-elif (($count <= 9))
-    echo "second condition is true"
-else
-    echo "THe condiion is false"
+    echo "Your friend is called Brad"
+elif ["$NAME" == "Jack"]
+    echo "Your friend is Jack"
 fi
